@@ -75,7 +75,7 @@ router.get('/:id', (req, res) => {
         });
 });
 
-router.post('/', withAuth, (req, res) => {
+router.post('/', /*withAuth,*/ (req, res) => {
     if (req.session) {
         Post.create({
             title: req.body.title,
@@ -90,7 +90,7 @@ router.post('/', withAuth, (req, res) => {
     }
 });
 
-router.put('/:id', withAuth, (req, res) => {
+router.put('/:id', /*withAuth,*/ (req, res) => {
     Post.update(
         {
             title: req.body.title
@@ -114,7 +114,7 @@ router.put('/:id', withAuth, (req, res) => {
         });
 });
 
-router.delete('/:id', withAuth, (req, res) => {
+router.delete('/:id', /*withAuth,*/ (req, res) => {
     Post.destroy({
         where: {
             id: req.params.id
