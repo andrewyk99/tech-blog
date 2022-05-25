@@ -14,9 +14,10 @@
         <div class="wrapper">
             <header>
                 <nav>
-                    <a href="../homepage">Home</a>
-                    <a href="/dashboard">Dashboard</a>
+                    <a href="/">Home</a>
+                    <a href="/login">Dashboard</a>
                     {{#if loggedIn}}
+                    <a href="/dashboard">Dashboard</a>
                     <button id="logout" class="btn-no-style">Logout</button>
                     {{else}}
                     <a href="/login">Login</a>
@@ -24,9 +25,9 @@
                 </nav>
                 
                 {{!-- {{#if}} --}}
-                <h1>
-                    <a href="/">The Tech Blog</a>
-                </h1>
+                <div class="row col-3 d-inline-flex container rounded">
+                    <h1 class="rounded">The Tech Blog</h1>
+                </div>
 
             </header>
 

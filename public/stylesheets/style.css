@@ -21,12 +21,22 @@ header {
 nav a {
     color: var(--sec-color);
     text-decoration: none;
+    margin-bottom: 5px;
+}
+
+header div {
+    margin-top: 20px;
+    padding-left: 0px;
 }
 
 header h1 {
+    padding: 4px 6px;
+    text-align: center;
     font-weight: bold;
     font-size: 36px;
     color: brown;
+    background-color: var(--sec-color);
+    margin-right: 40px;
 }
 
 body {
