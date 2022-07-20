@@ -1,11 +1,9 @@
 <div class="container">
     <section class="row posts">
         {{#if posts.length}}
-        <secion>
             {{#each posts as |post|}}
                 {{> post-info post}}
             {{/each}}
-        </secion>
         {{else}}
         <p class="no-posts">
             There aren't any posts yet! Feel free to add one!

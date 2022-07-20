@@ -5,6 +5,7 @@
 a {
     text-decoration: none;
 }
+
 :root {
     --prim-color: #2B1700;
     --sec-color: #fff8e7;
@@ -77,16 +78,45 @@ body {
 }
 
 .posts {
-    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.post-form {
+    background-color: var(--prim-color);
+    color: var(--sec-color);
+    width: 75%;
     border: solid;
     border-color: var(--prim-color);
+    padding: 8px;
+}
+
+.post-form:hover {
+    background-color: var(--sec-color);
+    color: var(--prim-color);
+}
+
+.posts-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.post-date {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 0;
 }
 
 .new-post-btn {
     background-color: var(--prim-color);
     color: var(--sec-color);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     border-color: var(--prim-color);
     display: flex;
     justify-content: center;
@@ -107,7 +137,7 @@ body {
     width: 700px;
 }
 
-h2 {
+.create-new-post {
     border: solid;
     background-color: var(--prim-color);
     color: var(--sec-color);
@@ -115,7 +145,7 @@ h2 {
     padding-left: 10px;
 }
 
-h3 {
+.new-post-input{
     padding-left: 15px;
 }
 
