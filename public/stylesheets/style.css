@@ -2,6 +2,9 @@
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
 :root {
     --prim-color: #2B1700;
     --sec-color: #fff8e7;
@@ -18,15 +21,36 @@ header {
     z-index: 999;
 }
 
+nav {
+    word-spacing: 45px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
 nav a {
     color: var(--sec-color);
     text-decoration: none;
     margin-bottom: 5px;
 }
 
+.btn {
+    background-color: var(--sec-color);
+    color: var(--prim-color);
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border-color: var(--sec-color);
+}
+
+.btn:hover {
+    background-color: var(--prim-color);
+    color: var(--sec-color);
+}
+
 header div {
     margin-top: 20px;
     padding-left: 0px;
+    margin-left: 0px;
 }
 
 header h1 {
@@ -34,11 +58,76 @@ header h1 {
     text-align: center;
     font-weight: bold;
     font-size: 36px;
-    color: brown;
+    color: var(--prim-color);
     background-color: var(--sec-color);
     margin-right: 40px;
 }
 
 body {
     background-color: var(--sec-color);
+}
+
+.col-3 {
+    width: 35%;
+    margin-top: 10px;
+}
+
+.no-posts {
+    font-size: 35px;
+}
+
+.posts {
+    display: flex;
+    border: solid;
+    border-color: var(--prim-color);
+}
+
+.new-post-btn {
+    background-color: var(--prim-color);
+    color: var(--sec-color);
+    text-decoration: none;
+    font-size: 20px;
+    border-color: var(--prim-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.new-post-btn:hover {
+    background-color: var(--sec-color);
+    color: var(--prim-color);
+}
+
+.new-post-form {
+    border: solid;
+    border-color: var(--prim-color);
+    width: 700px;
+}
+
+h2 {
+    border: solid;
+    background-color: var(--prim-color);
+    color: var(--sec-color);
+    border-color: var(--prim-color);
+    padding-left: 10px;
+}
+
+h3 {
+    padding-left: 15px;
+}
+
+.new-post-content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

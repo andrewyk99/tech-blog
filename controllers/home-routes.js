@@ -30,7 +30,8 @@ router.get('/', (req, res) => {
 
             res.render('homepage', {
                 posts,
-                loggedIn: req.session.loggedIn
+                loggedIn: req.session.loggedIn,
+                homepage: true
             });
         })
         .catch(err => {
@@ -90,7 +91,7 @@ router.get('/login', (req, res) => {
         return;
     }
 
-    res.render('login');
+    res.render('login', { homepage: true });
 });
 
 module.exports = router;
