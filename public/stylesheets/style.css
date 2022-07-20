@@ -89,6 +89,7 @@ body {
     border: solid;
     border-color: var(--prim-color);
     padding: 8px;
+    margin-bottom: 20px;
 }
 
 .post-form:hover {
@@ -123,7 +124,7 @@ body {
     align-items: center;
     width: 75%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 18px;
 }
 
 .new-post-btn:hover {
