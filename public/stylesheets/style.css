@@ -139,6 +139,14 @@ body {
     font-size: 20px;
 }
 
+.comment-title {
+    display: flex;
+    justify-content: left;
+    background-color: var(--prim-color);
+    color: var(--sec-color);
+    font-size: 20px;
+}
+
 .no-posts {
     font-size: 35px;
 }
