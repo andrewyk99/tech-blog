@@ -1,0 +1,14 @@
+<div>
+    <form class="new-post-form">
+        <h2 class="create-new-post">Edit Post</h2>
+        <h3 class="new-post-input">Title</h3>
+        <input class="new-post-title form-control-lg" id="title" name="post-title" type="text" value="{{post.title}}" />
+        <h3 class="new-post-input">Content</h3>
+        <textarea class="new-post-content form-control" id="post-content" name="post-content" rows="4">{{post.post_content}}</textarea>
+        <button id="save-edit-btn" class="create-btn rounded btn">Save Post</button>
+        <button type="button" id="delete-post-btn" class="delete-btn btn-danger btn rounded">Delete Post</button>
+    </form>
+</div>
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>

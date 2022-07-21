@@ -1,0 +1,11 @@
+<div>
+    {{> post-info post}}
+
+    {{#if loggedIn}}
+    <form class="homepage-single-post">
+        <h4 class="create-new-post">Comment</h4>
+        <textarea class="new-post-content form-control" rows="4"></textarea>
+        <button type="submit" class="create-btn rounded btn">Add Comment</button>
+    </form>
+    {{/if}}
+</div>

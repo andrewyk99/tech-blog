@@ -1,4 +1,7 @@
-<a class="post-form row rounded" role="button" href="/dashboard/{{id}}">
-    <p class="posts-title col">{{title}}</p>
-    <p class="col post-date">{{formate_date created_at}}</p>
+<a class="row container homepage-single-post" href="/post/{{id}}">
+    <div class="homepage-header row">
+        <p class="homepage-post-title col">{{title}}</h3>
+        <p class="homepage-post-date col">Posted by {{user.username}} on {{formate_date created_at}}</p>
+    </div>
+    <p class="homepage-post-content row">{{post_content}}</p>
 </a>

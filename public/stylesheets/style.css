@@ -11,6 +11,10 @@ a {
     --sec-color: #fff8e7;
 }
 
+ul {
+    list-style-type: none;
+}
+
 header {
     padding: 20px 35px;
     background-color: var(--prim-color);
@@ -71,6 +75,68 @@ body {
 .col-3 {
     width: 35%;
     margin-top: 10px;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+
+.homepage-post-form {
+    padding-left: 0%;
+    justify-content: center;
+}
+
+.homepage-single-post {
+    border: solid;
+    border-color: var(--prim-color);
+    width: 900px;
+    justify-content: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.homepage-header {
+    background-color: var(--prim-color);
+    color: var(--sec-color);
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-bottom: 5px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    justify-content: center;
+}
+
+.homepage-post-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.homepage-post-date {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.homepage-post-content {
+    background-color: var(--sec-color);
+    color: var(--prim-color);
+    margin: auto;
+    justify-content: left;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .no-posts {
@@ -146,13 +212,56 @@ body {
     padding-left: 10px;
 }
 
-.new-post-input{
+.new-post-input {
     padding-left: 15px;
+}
+
+.new-post-title {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 75%;
 }
 
 .new-post-content {
     display: flex;
     justify-content: center;
+    width: 75%;
+    margin: auto;
+    font-size: 20px;
+    resize: none
+}
+
+.create-btn {
+    background-color: var(--prim-color);
+    color: var(--sec-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-color: var(--prim-color);
+}
+
+.create-btn:hover {
+    background-color: var(--sec-color);
+    color: var(--prim-color);
+}
+
+.delete-btn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 25px;
+    margin-bottom: 10px;
+    background-color: var(--prim-color);
+    color: var(--sec-color);
+}
+
+.delete-btn:hover {
+    background-color: #dc3545;
 }
 
 .footer {
